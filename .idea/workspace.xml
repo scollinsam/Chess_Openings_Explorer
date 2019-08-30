@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281e9c3a-d101-4c1f-b9e3-c01ac5f1e9bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ChessCheck/.idea/Chess_Check.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/Create_Tables.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/bishop_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/bishop_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/king_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/king_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/knight_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/knight_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/pawn_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/pawn_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/queen_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/queen_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/rook_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/images/rook_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessCheck/style.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +14,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="408">
               <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -76,7 +80,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ChessCheck" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,6 +91,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -102,18 +107,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Chess_Check" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Chess_Check" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Chess_Check" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chess_Check" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chess_Check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chess_Check" type="462c0819:PsiDirectoryNode" />
-              <item name="ChessCheck" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,18 +227,18 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32792792" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32149202" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32149202" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -276,8 +291,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="408">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>

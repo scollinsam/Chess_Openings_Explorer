@@ -37,7 +37,7 @@ border: 18px solid rgb(107, 86, 28);
 }
 
 .knight_black {
-    background-image: url("./images/knight_black.png");
+    background-image: url("../images/knight_black.png");
     background-repeat: no-repeat; 
     background-position: center
 }

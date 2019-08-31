@@ -8,24 +8,34 @@ print(os.getcwd())
 path = sys.path[0]
 print(path);
 
+saved_board = {}
+
 @route('/')
 def index():
     # print(path)
     return template(path + "\\index.html")
 
 
-@route('/style.css')
-def css():
-    return static_file('style.css', root='')
+@route('/css/<css_file>')
+def css(css_file):
+    return static_file(css_file, root='css')
 
 
-@route('/script.js')
-def js():
-    return static_file("script.js", root='')
+@route('/js/<js_file>')
+def js(js_file):
+    return static_file(js_file, root='js')
 
 @route("/images/<filepath:re:.*\.(jpg|png|gif|ico|svg)>")
 def img(filepath):
     return static_file(filepath, root="images")
+
+@post('/save')
+def receive_board():
+    board = request.json['board']
+    for square in board:
+        saved_board[square] = board[square]
+    print(saved_board)
+    return board
 
 def main():
     # print(sys.path)

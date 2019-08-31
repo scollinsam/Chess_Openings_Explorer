@@ -224,6 +224,7 @@ var save_new = 1
 var save_piece = plib[1]
 var save_taken_piece = 'queen-white'
 var graveyard = []
+move_count = 0
 
 
 // changePiece(12, 20, plib[12])
@@ -241,9 +242,14 @@ function changePiece(prev_pos, new_pos, piece){
     plib[new_pos] = piece
     plib[prev_pos] = 'empty'
     changeTurn();
+    move_count += 1;
+    console.log(move_count)
     save_orig = prev_pos;
     save_new = new_pos;
     save_piece = piece
+    if (move_count >= 4) {
+        save()
+    }
 }
 
 function undoTurn(){
@@ -289,3 +295,17 @@ board.addEventListener('click', function (e) {
     square = event.target
     clicked(square.id)
 })
+
+
+function save() {
+    $.ajax({
+        type: 'POST',
+        url: '/save',
+        contentType: "application/json",
+        data: JSON.stringify({
+            board: plib
+        }),
+        success: () => { console.log("board saved successfully")},
+        error: () => { console.log("error saving board successfully")}
+    });
+}

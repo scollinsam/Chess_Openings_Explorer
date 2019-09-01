@@ -212,6 +212,9 @@ for (row_count = 0; row_count < 8; row_count ++){
         if (plib[square_num] != "empty") {
             square.classList.add(plib[square_num])
         }
+        else {
+            square.classList.add("empty")
+        }
         
         row.appendChild(square);
 
@@ -249,6 +252,7 @@ function changePiece(prev_pos, new_pos, piece){
     save_piece = piece
     if (move_count >= 4) {
         save()
+        getOpening()
     }
 }
 
@@ -308,4 +312,18 @@ function save() {
         success: () => { console.log("board saved successfully")},
         error: () => { console.log("error saving board successfully")}
     });
+}
+
+function getOpening() {
+    $.ajax({
+        type: "GET",
+        url: '/getopening',
+        dataType: "json",
+        success: (data) => {
+            console.log(data)
+        },
+        error: () => {
+            console.log('did not receive plib')
+        }
+    })
 }

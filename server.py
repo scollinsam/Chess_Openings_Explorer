@@ -1,4 +1,5 @@
 import bottle
+import json
 from bottle import route, get, run, template, static_file, post, request, get, jinja2_view
 import os
 import sys
@@ -36,6 +37,12 @@ def receive_board():
         saved_board[square] = board[square]
     print(saved_board)
     return board
+
+@get('/getopening')
+def send_opening():
+    print('it worked')
+    matched_board = json.dumps(saved_board)
+    return matched_board
 
 def main():
     # print(sys.path)

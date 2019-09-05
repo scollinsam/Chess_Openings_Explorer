@@ -1,0 +1,96 @@
+.black_square{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(77, 47, 27, 0.781);
+
+
+}
+.white_square{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(224, 214, 207, 0.781);
+
+
+}
+#chess_board{
+background-color: black;
+border: 18px solid rgb(107, 86, 28);
+
+}
+
+#rim{
+    background-color: gold;
+    padding: 4px;
+    width: 604px;
+    border: solid 1px black;
+}
+
+.pawn_black {
+    background-image: url("../images/pawn_black.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+.rook_black {
+    background-image: url("../images/rook_black.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.knight_black {
+    background-image: url("../images/knight_black.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.bishop_black {
+    background-image: url("../images/bishop_black.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.king_black {
+    background-image: url("../images/king_black.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.queen_black {
+    background-image: url("../images/queen_black.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.pawn_white {
+    background-image: url("../images/pawn_white.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+.rook_white {
+    background-image: url("../images/rook_white.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.knight_white {
+    background-image: url("../images/knight_white.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.bishop_white {
+    background-image: url("../images/bishop_white.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.king_white {
+    background-image: url("../images/king_white.png");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.queen_white {
+    background-image: url("../images/queen_white.png");
+    background-repeat: no-repeat;
+    background-position: center
+}

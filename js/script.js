@@ -233,6 +233,7 @@ var save_new = 1
 var save_piece = plib[1]
 var save_taken_piece = 'queen-white'
 var graveyard = []
+var move_count = 0
 
 
 // changePiece(12, 20, plib[12])
@@ -250,6 +251,8 @@ function changePiece(prev_pos, new_pos, piece){
     plib[new_pos] = piece
     plib[prev_pos] = 'empty'
     changeTurn();
+    move_count += 1;
+    console.log(move_count)
     save_orig = prev_pos;
     save_new = new_pos;
     save_piece = piece

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8377a29a-0347-4e60-a6af-303ef7aa5dd7" name="Default Changelist" comment="Merge branch 'master' of https://github.com/scollinsam/ChessCheck2&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;css/style.css&#10;#&#9;index.html&#10;#&#9;js/script.js&#10;#&#9;server.py">
-      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8377a29a-0347-4e60-a6af-303ef7aa5dd7" name="Default Changelist" comment="Merge branch 'master' of https://github.com/scollinsam/ChessCheck2&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;css/style.css&#10;#&#9;index.html&#10;#&#9;js/script.js&#10;#&#9;server.py" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3743">
-              <caret line="277" column="33" selection-start-line="277" selection-start-column="33" selection-end-line="277" selection-end-column="33" />
+            <state relative-caret-position="-3794">
+              <caret line="274" column="33" selection-start-line="274" selection-start-column="33" selection-end-line="274" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -131,11 +128,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="313" />
-    <option name="y" value="250" />
-    <option name="width" value="1653" />
-    <option name="height" value="981" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="184" />
+    <option name="y" value="94" />
+    <option name="width" value="1674" />
+    <option name="height" value="654" />
   </component>
   <component name="ProjectId" id="1QO0QBgVK26TJ8a1OJZui6fHYYI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -317,15 +314,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-13" y="451" width="1116" height="436" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13513513" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15755329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49046105" visible="true" weight="0.39253998" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49026877" visible="true" weight="0.7269737" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49523053" weight="0.39786857" />
@@ -335,7 +332,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49682036" weight="0.3285968" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49841017" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50953895" side_tool="true" visible="true" weight="0.39253998" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50973123" side_tool="true" visible="true" weight="0.7269737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -449,8 +446,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3743">
-          <caret line="277" column="33" selection-start-line="277" selection-start-column="33" selection-end-line="277" selection-end-column="33" />
+        <state relative-caret-position="-3794">
+          <caret line="274" column="33" selection-start-line="274" selection-start-column="33" selection-end-line="274" selection-end-column="33" />
         </state>
       </provider>
     </entry>

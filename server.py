@@ -94,7 +94,7 @@ def match_check():
 @route('/')
 def index():
     # print(path)
-    return template(path + "index.html")
+    return template(path + "/index.html")
 
 
 @route('/css/<css_file>')

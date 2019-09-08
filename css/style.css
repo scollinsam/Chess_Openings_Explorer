@@ -1,3 +1,11 @@
+body {
+    display: inline-block;
+}
+
+#layout {
+    display: flex;
+}
+
 .black_square{
     width: 70px;
     height: 70px;
@@ -13,8 +21,8 @@
 
 }
 #chess_board{
-background-color: black;
-border: 18px solid rgb(107, 86, 28);
+    background-color: black;
+    border: 18px solid rgb(107, 86, 28);
 
 }
 
@@ -93,4 +101,45 @@ border: 18px solid rgb(107, 86, 28);
     background-image: url("../images/queen_white.png");
     background-repeat: no-repeat;
     background-position: center
+}
+#opening_match {
+    color: black;
+    width: 667px;
+}
+#opening_title {
+    height: 95px;
+    width: 336px;
+    text-align: center;
+    color: white;
+    margin-top: 1%;
+    margin-left: 10%;
+    padding: 2%;
+    background: purple;
+    border: solid 3px gold;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#opening_title_line {
+    position: relative;
+    top: 8%;
+}
+
+#opening_desc {
+    height: 153px;
+    width: 336px;
+    text-align: center;
+    color: black;
+    margin-top: 1%;
+    margin-left: 10%;
+    padding: 2%;
+    border: solid 3px saddlebrown;
+    background: beige;
+    font-weight: bold;
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+#opening_desc_line {
+    vertical-align: center;
 }

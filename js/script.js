@@ -2,6 +2,23 @@
 
 var plib = {1:'rook_black', 2:'knight_black', 3:'bishop_black', 4:'queen_black', 5:'king_black', 6:'bishop_black', 7:'knight_black', 8:'rook_black', 9:'pawn_black', 10:'pawn_black', 11:'pawn_black', 12:'pawn_black', 13:'pawn_black', 14:'pawn_black', 15:'pawn_black', 16:'pawn_black', 17: 'empty', 18: 'empty', 19: 'empty', 20: 'empty', 21: 'empty', 22: 'empty', 23: 'empty', 24: 'empty', 25: 'empty', 26: 'empty', 27: 'empty', 28: 'empty', 29: 'empty', 30: 'empty', 31: 'empty', 32: 'empty', 33: 'empty', 34: 'empty', 35: 'empty', 36: 'empty', 37: 'empty', 38: 'empty', 39: 'empty', 40: 'empty', 41: 'empty', 42: 'empty', 43: 'empty', 44: 'empty', 45: 'empty', 46: 'empty', 47: 'empty', 48: 'empty',49: 'pawn_white', 50: 'pawn_white', 51: 'pawn_white', 52: 'pawn_white', 53: 'pawn_white', 54: 'pawn_white', 55: 'pawn_white', 56: 'pawn_white', 57: 'rook_white', 58: 'knight_white', 59: 'bishop_white', 60: 'queen_white', 61: 'king_white', 62: 'bishop_white', 63: 'knight_white', 64: 'rook_white'}
 
+
+var layout = document.getElementById("layout")
+var info_text = document.createElement("div")
+layout.appendChild(info_text)
+info_text.setAttribute("id", "opening_match")
+var opening_title = document.createElement('div')
+opening_title.setAttribute("id", "opening_title")
+var opening_desc = document.createElement('div')
+opening_desc.setAttribute("id", "opening_desc")
+var opening_title_line = document.createElement('a')
+opening_title_line.setAttribute("id", "opening_title_line")
+var opening_desc_line = document.createElement('a')
+opening_desc_line.setAttribute("id", "opening_desc_line")
+
+info_text.appendChild(opening_title)
+info_text.appendChild(opening_desc)
+
 function printList(){
     for (i=1; i<65; i++){
     console.log(plib[i])
@@ -198,6 +215,12 @@ function changeTurn(){
     turn = 'black'}
     else {turn_message.innerHTML = "White's turn"
     turn = 'white'}
+    saveAndGetOpening()
+}
+
+function saveAndGetOpening(){
+    save()
+    getOpening()
 }
 
 var board = document.getElementById("chess_board");
@@ -256,10 +279,6 @@ function changePiece(prev_pos, new_pos, piece){
     save_orig = prev_pos;
     save_new = new_pos;
     save_piece = piece
-    if (move_count >= 4) {
-        save()
-        getOpening()
-    }
 }
 
 function undoTurn(){
@@ -326,7 +345,7 @@ function getOpening() {
         url: '/getopening',
         dataType: "json",
         success: (data) => {
-            console.log(data)
+            renderData(data)
         },
         error: () => {
             console.log('did not receive plib')
@@ -334,3 +353,22 @@ function getOpening() {
     })
 }
 
+
+function renderData(data) {
+    if (opening_title_line.innerHTML != "" || opening_desc_line.innerHTML != "") {
+        opening_title_line.innerHTML = ""
+        opening_desc_line.innerHTML = ""
+    }
+    var opening_title_text = document.createTextNode(JSON.stringify(data[0]))
+    opening_title_text.nodeValue = opening_title_text.nodeValue.replace(/['"]+/g, '')
+    var opening_desc_text = document.createTextNode(JSON.stringify(data[1]))
+    opening_desc_text.nodeValue = opening_desc_text.nodeValue.replace(/['"]+/g, '')
+    if (opening_title_text.nodeValue != "undefined" && opening_title_text.nodeValue != "undefined") {
+        opening_title_line.appendChild(opening_title_text)
+        opening_desc_line.appendChild(opening_desc_text)
+        opening_title.appendChild(opening_title_line)
+        opening_desc.appendChild(opening_desc_line)
+    }
+    info_text.appendChild(opening_title)
+    info_text.appendChild(opening_desc)
+}

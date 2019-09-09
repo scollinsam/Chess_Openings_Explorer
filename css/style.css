@@ -1,5 +1,16 @@
 body {
     display: inline-block;
+    background: #1c4d1c;
+}
+
+#title-box {
+    height: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    color: white;
 }
 
 #layout {

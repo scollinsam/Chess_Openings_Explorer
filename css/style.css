@@ -1,16 +1,41 @@
 body {
     display: inline-block;
     background: #1c4d1c;
+    margin-left: 8%;
 }
 
 #title-box {
     height: 100px;
+    margin-bottom: 40px;
     text-align: center;
+    text-shadow: -2px 0 #633e3e, 0 2px #633e3e, 2px 0 #633e3e, 0 -2px #633e3e;
 }
 
 h2 {
     font-size: 45px;
-    color: white;
+    color: #f3f1f1;
+}
+
+input {
+    color: white; background-color:  rgb(23, 83, 83);
+}
+
+#turn{
+    color: rgb(255, 255, 255);
+    width: 90px;
+    background-color: rgb(23, 83, 83);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: groove 2px rgb(255, 255, 255);
+    margin-right: 168px;
+    margin-left: 120px;
+    padding: 2px;
+}
+
+#button-row{
+    display: flex;
+    align-content: space-around;
+    width: 522px;
+    padding-left: 4px;
 }
 
 #layout {
@@ -18,31 +43,86 @@ h2 {
 }
 
 .black_square{
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
     background-color: rgba(77, 47, 27, 0.781);
+    background-size: 41px;
 
 
 }
 .white_square{
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
     background-color: rgba(224, 214, 207, 0.781);
+    background-size: 41px;
 
 
 }
 #chess_board{
     background-color: black;
-    border: 18px solid rgb(107, 86, 28);
+    border: 2px solid rgb(194, 145, 10);
+    width: 464px;
+    height: 464px;
 
+}
+
+.letter-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px;
+    margin-left: 1.4%;
+    margin-right: 8.2px;
+}
+
+.letter {
+    background: rgb(204, 168, 121);
+    width: 12px;
+    text-align: center;
+    height: 16px;
+    color: rgb(39, 42, 53);
+    font-family: serif;
+    border: 1px inset rgb(175, 139, 20);
+    border-radius: 3px;
+    font-weight: bold
+}
+
+#flex-container-row {
+    display: flex;
+}
+
+.nums-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 4%;
+    margin-top: -3%;
+    margin-bottom: -3%;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 3px;
+}
+
+.numb {
+    background: rgb(204, 168, 121);
+    width: 12px;
+    text-align: center;
+    height: 16px;
+    color: rgb(39, 42, 53);
+    font-family: serif;
+    border: 1px inset rgb(175, 139, 20);
+    border-radius: 3px;
+    font-weight: bold
 }
 
 #rim{
-    background-color: gold;
-    padding: 4px;
-    width: 604px;
-    border: solid 1px black;
+    background-color: #2f2502;
+    padding: 2px;
+    width: 510px;
+    height: 510px;
+    border: outset 7px rgb(97, 58, 13);
 }
+
 
 .pawn_black {
     background-image: url("../images/pawn_black.png");
@@ -114,21 +194,23 @@ h2 {
     background-position: center
 }
 #opening_match {
-    color: black;
-    width: 667px;
+    background: #1c4d1c;
+    width: 1px;
+    margin-left: 6%;
 }
 #opening_title {
     height: 95px;
     width: 336px;
     text-align: center;
     color: white;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 10%;
     padding: 2%;
     background: purple;
-    border: solid 3px gold;
+    border: solid 3px #dac347;
     font-weight: bold;
     font-size: 36px;
+    font-family: 'Crimson Text', serif;
 }
 
 #opening_title_line {
@@ -149,8 +231,128 @@ h2 {
     font-weight: bold;
     font-size: 36px;
     vertical-align: middle;
+    font-family: 'Crimson Text', serif;
 }
 
 #opening_desc_line {
     vertical-align: center;
 }
+
+@media only screen and (max-width: 1000px) {
+    #title-box {
+        margin-right: 32%;
+        height: 77px;
+    }
+    h2 {
+        font-size: 35px;
+        color: #f3f1f1;
+    }
+    #turn {
+        margin-right: 124px;
+        margin-left: 73px; 
+    }
+    #opening_title {
+      width:200px;
+      font-size: 30px;
+    }
+    #opening_desc {
+      width: 200px;
+      font: 25px;
+    }
+    #rim {
+        width: 421px;
+        height: 421px;  
+    }
+    #chess_board {
+        width: 364px;
+        height: 364px;
+        table-layout: fixed;
+    }
+    .black_square {
+        width: 37px;
+        height: 37px;
+        background-size: 37px;
+    }
+    .white_square {
+        width: 37px;
+        height: 37px;
+        background-size: 37px;
+    }
+  }
+
+  @media screen and (max-width: 670px) and (min-width: 400px) {
+    #title-box {
+       margin-right: 52%;
+       height: 77px;
+    }
+    h2 {
+        font-size: 27px;
+        color: #f3f1f1;
+    }
+    #opening_title {
+      width: 134px;
+      font-size: 28px;
+    }
+    #opening_desc {
+      width: 134px;
+      font-size: 24px;
+    }
+    #rim {
+        width: 240px;
+        height: 240px;
+    }
+    .letter-row {
+        margin-left: 6.4%;
+        margin-right: 22.2px;
+    }
+    .nums-column {
+        padding-right: 3px;
+    }
+    #chess_board {
+        width: 197px;
+        height: 197px;
+    }
+    .black_square {
+        width: 19px;
+        height: 19px;
+        background-size: 19px;
+    }
+    .white_square {
+        width: 19px;
+        height: 19px;
+        background-size: 19px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #title-box {
+        margin-right: 19%;
+        height: 77px;
+    }
+    h2 {
+        font-size: 30px;
+        color: #f3f1f1;
+    }
+    #layout {
+        display: block;
+    }
+    #opening_match {
+        margin-top: 7%;
+        background: #1c4d1c;
+        width: 1px;
+        margin-left: 20%;
+    }
+    #opening_title {
+        width: 220px;
+        height: 68px;
+    }
+    #opening_desc {
+        width: 220px;
+        height: 93px;
+    }
+    body {
+        display: inline-block;
+        background: #1c4d1c;
+        margin-left: 19%;
+    }
+  }

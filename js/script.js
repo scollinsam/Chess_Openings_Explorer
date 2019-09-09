@@ -49,52 +49,107 @@ var piece_list = {
         }
     },
     pawn: {
+
         move_set: function(orig, dest){
+
             if (plib[dest] == 'empty' || plib[dest].split('_')[1] != plib[orig].split('_')[1]){
+
                 if (plib[orig] == "pawn_black"){
+
                     if (dest - orig == 8){
+
+                        if (plib[dest] == 'empty'){
+
                         return true
+
+                        }
+
                     }else if (orig < 17 && orig > 8){
+
                         if (dest-orig == 16){
+
                             if (plib[dest-8] == 'empty'){
+
                                 return true
+
                             }else{
+
                                 return false
+
                             }
 
-                        }else if (plib[dest].split('_')[1] != plib[orig].split('_')[1]){
+ 
+
+                        }else if (plib[dest].split('_')[1] == 'white'){
+
                             if (dest - orig == 7 || dest - orig == 9){
+
                                 return true
+
                             }
+
                         }
-                    }else if (plib[dest].split('_')[1] != plib[orig].split('_')[1]){
+
+                    }else if (plib[dest].split('_')[1] == 'white'){
+
                         if (dest - orig == 7 || dest - orig == 9){
+
                             return true
+
                         }
+
                     }
+
                 }else{
+
                     if (orig - dest == 8){
+
+                        if (plib[dest] == 'empty'){
+
                         return true
+
+                        }
+
                     }else if (orig < 57 && orig > 48){
+
                         if (orig - dest == 16){
+
                             if (plib[parseInt(dest)+8] == 'empty'){
+
                                 return true
+
                             }else{
+
                                 return false
+
                             }
-                        }else if (plib[dest].split('_')[1] != plib[orig].split('_')[1]){
+
+                        }else if (plib[dest].split('_')[1] == 'black'){
+
                             if (dest - orig == -7 || dest - orig == -9){
+
                                 return true
+
                             }
+
                         }
-                    }else if (plib[dest].split('_')[1] != plib[orig].split('_')[1]){
+
+                    }else if (plib[dest].split('_')[1] == 'black'){
+
                         if (dest - orig == -7 || dest - orig == -9){
+
                             return true
+
                         }
+
                     }
+
                 }
+
             }
+
         }
+
     },
     king: {
         move_set: function(orig, dest){
@@ -202,7 +257,20 @@ var piece_list = {
 }
 
 
-
+function restart(){
+    plib = {1:'rook_black', 2:'knight_black', 3:'bishop_black', 4:'queen_black', 5:'king_black', 6:'bishop_black', 7:'knight_black', 8:'rook_black', 9:'pawn_black', 10:'pawn_black', 11:'pawn_black', 12:'pawn_black', 13:'pawn_black', 14:'pawn_black', 15:'pawn_black', 16:'pawn_black', 17: 'empty', 18: 'empty', 19: 'empty', 20: 'empty', 21: 'empty', 22: 'empty', 23: 'empty', 24: 'empty', 25: 'empty', 26: 'empty', 27: 'empty', 28: 'empty', 29: 'empty', 30: 'empty', 31: 'empty', 32: 'empty', 33: 'empty', 34: 'empty', 35: 'empty', 36: 'empty', 37: 'empty', 38: 'empty', 39: 'empty', 40: 'empty', 41: 'empty', 42: 'empty', 43: 'empty', 44: 'empty', 45: 'empty', 46: 'empty', 47: 'empty', 48: 'empty',49: 'pawn_white', 50: 'pawn_white', 51: 'pawn_white', 52: 'pawn_white', 53: 'pawn_white', 54: 'pawn_white', 55: 'pawn_white', 56: 'pawn_white', 57: 'rook_white', 58: 'knight_white', 59: 'bishop_white', 60: 'queen_white', 61: 'king_white', 62: 'bishop_white', 63: 'knight_white', 64: 'rook_white'}
+    turn = 'white'
+    document.getElementById("turn").innerHTML = "White's turn"
+    for (i = 1; i<65; i++){
+        var loc = String(i)
+        var square = document.getElementById(loc)
+        if (plib[i] != 'empty'){
+            square.classList.add(plib[i])
+        }else{
+            square.classList.remove(square.classList[1])
+        }
+     }
+}
 
 
 
@@ -249,6 +317,31 @@ for (row_count = 0; row_count < 8; row_count ++){
 
     }
 }
+
+var let_line = document.getElementsByClassName("letter-row")
+var letters = ["A", "B", "C", "D", "E", "F", "G", "H"]
+for (var i = 0; i<2; i++){
+    for (var x = 0; x<8; x++){
+        var letter = document.createElement("span");
+        letter.classList.add("letter");
+        letter.innerHTML = (letters[x]);
+        let_line[i].appendChild(letter);
+    }
+}
+
+ 
+
+var num_line = document.getElementsByClassName("nums-column")
+var nums = ["8", "7", "6", "5", "4", "3", "2", "1"]
+for (var i = 0; i<2; i++){
+    for (var x = 0; x<8; x++){
+        var numb = document.createElement("div");
+        numb.classList.add("numb");
+        numb.innerHTML = (nums[x]);
+        num_line[i].appendChild(numb);
+    }
+}
+
 var save_orig = 1
 var orig_taken_piece = 1
 var orig_moved_piece = 1

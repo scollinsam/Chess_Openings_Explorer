@@ -350,8 +350,6 @@ var graveyard = []
 var move_count = 0
 
 
-// changePiece(12, 20, plib[12])
-// changePiece(53, 37, plib[52])
 function changePiece(prev_pos, new_pos, piece){
     orig_moved_piece = plib[prev_pos]
     orig_taken_piece = plib[new_pos]

@@ -15,6 +15,8 @@ var opening_title_line = document.createElement('a')
 opening_title_line.setAttribute("id", "opening_title_line")
 var opening_desc_line = document.createElement('a')
 opening_desc_line.setAttribute("id", "opening_desc_line")
+opening_title.innerHTML = "Scandinavian Defense";
+opening_desc.innerHTML = "This is the Scnadinavian Defense";
 
 info_text.appendChild(opening_title)
 info_text.appendChild(opening_desc)
@@ -270,7 +272,7 @@ function restart(){
             square.classList.remove(square.classList[1])
         }
      }
-}
+} 
 
 
 

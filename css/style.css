@@ -291,11 +291,11 @@ input {
     }
     #opening_title {
       width: 134px;
-      font-size: 28px;
+      font-size: 20px;
     }
     #opening_desc {
       width: 134px;
-      font-size: 24px;
+      font-size: 18px;
     }
     #rim {
         width: 240px;
@@ -345,10 +345,12 @@ input {
     #opening_title {
         width: 220px;
         height: 68px;
+        font-size: 20px;
     }
     #opening_desc {
         width: 220px;
         height: 93px;
+        font-size: 18px;
     }
     body {
         display: inline-block;

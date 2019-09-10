@@ -259,6 +259,8 @@ function restart(){
     plib = {1:'rook_black', 2:'knight_black', 3:'bishop_black', 4:'queen_black', 5:'king_black', 6:'bishop_black', 7:'knight_black', 8:'rook_black', 9:'pawn_black', 10:'pawn_black', 11:'pawn_black', 12:'pawn_black', 13:'pawn_black', 14:'pawn_black', 15:'pawn_black', 16:'pawn_black', 17: 'empty', 18: 'empty', 19: 'empty', 20: 'empty', 21: 'empty', 22: 'empty', 23: 'empty', 24: 'empty', 25: 'empty', 26: 'empty', 27: 'empty', 28: 'empty', 29: 'empty', 30: 'empty', 31: 'empty', 32: 'empty', 33: 'empty', 34: 'empty', 35: 'empty', 36: 'empty', 37: 'empty', 38: 'empty', 39: 'empty', 40: 'empty', 41: 'empty', 42: 'empty', 43: 'empty', 44: 'empty', 45: 'empty', 46: 'empty', 47: 'empty', 48: 'empty',49: 'pawn_white', 50: 'pawn_white', 51: 'pawn_white', 52: 'pawn_white', 53: 'pawn_white', 54: 'pawn_white', 55: 'pawn_white', 56: 'pawn_white', 57: 'rook_white', 58: 'knight_white', 59: 'bishop_white', 60: 'queen_white', 61: 'king_white', 62: 'bishop_white', 63: 'knight_white', 64: 'rook_white'}
     turn = 'white'
     document.getElementById("turn").innerHTML = "White's turn"
+    opening_desc_line.innerHTML = ""
+    opening_title_line.innerHTML = ""
     for (i = 1; i<65; i++){
         var loc = String(i)
         var square = document.getElementById(loc)

@@ -124,7 +124,7 @@ def send_opening():
 
 def main():
     # print(sys.path)
-    run(host='localhost', port=8080)
+    run(host='0.0.0.0', port=argv[1])
 
 
 if __name__ == "__main__":
